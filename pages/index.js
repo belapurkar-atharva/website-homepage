@@ -5,6 +5,8 @@ import {
   Image,
   useColorModeValue
 } from '@chakra-ui/react'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
 
 const Page = () => {
   return (
@@ -40,11 +42,24 @@ const Page = () => {
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src=""
+            src="/images/atharva.jpg"
             alt="Profile image"
           />
         </Box>
       </Box>
+
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <Paragraph>
+          Atharva is a full-stack developer based in Pune with a passion for
+          building digital services/stuff he wants. He has a knack for all
+          things launching products, from planning and designing all the way to
+          solving real-life problems with code. When not online, he loves
+          watching/reading Anime and Manga.
+        </Paragraph>
+      </Section>
     </Container>
   )
 }
