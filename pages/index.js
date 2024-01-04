@@ -1,5 +1,6 @@
 import {
   Box,
+  Button,
   Container,
   Heading,
   Image,
@@ -7,6 +8,8 @@ import {
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
@@ -58,6 +61,46 @@ const Page = () => {
           things launching products, from planning and designing all the way to
           solving real-life problems with code. When not online, he loves
           watching/reading Anime and Manga.
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.2}>
+        <Box align="center" my={4}>
+          <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            My Portfolio
+          </Button>
+        </Box>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1998</BioYear>
+          Born in Pune (पुणे), India.
+        </BioSection>
+        <BioSection>
+          <BioYear>2020</BioYear>
+          Completed Bachelors (B.Tech) in Information Technology from
+          Maharashtra Institute of Technology.
+        </BioSection>
+        <BioSection>
+          <BioYear>Dec 2021 - Nov 22</BioYear>
+          Worked at Cognizant, Pune.
+        </BioSection>
+        <BioSection>
+          <BioYear>Dec 2022 - July 23</BioYear>
+          Worked at Raja Software Labs, Pune.
+        </BioSection>
+      </Section>
+
+      <Section delay={0.4}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>
+          Music, Travelling, Bikes, Anything related animes ;).
         </Paragraph>
       </Section>
     </Container>
